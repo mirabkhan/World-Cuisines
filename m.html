@@ -1,0 +1,587 @@
+<!DOCTYPE html> 
+<!-- it tells the web browser that i am using html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- This ensures your website can display almost any character or symbol from any language correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this makes the website responsive -->
+    <title>Chinese Cuisine</title>
+    <link rel="stylesheet" href="m.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
+</head>
+<body id="chibdy">
+<header>
+    <!-- header and sections are semantic tags they tell that this is a particular part -->
+    <section class="hero-chinese">
+    <div class="hero-content">
+        <h1>Chinese Cuisine</h1>
+        <p class="p1">Experience the art of Chinese cuisine.<br> From bold Szechuan spices to delicate Dim Sum traditions, <br>discover a heritage of flavor crafted over centuries.</p>
+    </div>
+</section></header>
+<input type="button" value="Go to Home page" id="home-btn"><br>
+    <nav class="navbar">
+<ul>
+    <li><a href="#" data-filter="all">All Dishes</a></li>
+    <!-- These are Custom Data Attributes. They don't change how the site looks, but they act like "sticky notes" that your JavaScript uses to know which dishes to show or hide. "a" tag defines the link  behaiviour and the "#" This is a "placeholder." It tells the browser, "Stay on this page, but treat this as a clickable link." -->
+    <li><a href="#" data-filter="noodles">Noodles</a></li>
+    <li><a href="#" data-filter="rice">Rice</a></li>
+    <li><a href="#" data-filter="soups">Soups</a></li>
+    <li><a href="#" data-filter="dimsum">Dim Sum</a></li>
+    <li><a href="#" data-filter="drinks">Drinks</a></li>
+    <li><a href="#" data-filter="dessert">Desserts</a></li>
+</ul>
+</nav>
+<div class="dishes-container">
+
+    <div class="dish-card" data-category="rice">
+        <div class="dish-img-container">
+            <img src="Yanzhou-fried-rice.JPG.jpg" alt="Fried Rice" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Yanzhou Fried Rice</h4>
+            <p class="description">Yangzhou Fried Rice is a fragrant blend of fluffy rice, tender chicken, juicy shrimp, and soft eggs.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Rice, chicken breast, shrimp, eggs, veggies.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$14.50</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="dish-card" data-category="rice">
+        <div class="dish-img-container">
+            <img src="Kung pao chicken.JPG.jpg" alt="Chicken" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Kung Pao Chicken</h4>
+            <p class="description">A bold Sichuan classic featuring tender chicken cubes tossed in a glossy, savory-spicy sauce.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Chicken, peanuts, chilies, garlic, ginger.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$15.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="dish-card" data-category="rice">
+        <div class="dish-img-container">
+            <img src="Pecking duck.JPG.jpg" alt="duck" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Pecking Duck</h4>
+            <p class="description">Crispy golden skin with tender, juicy halal duck meat, served with soft pancakes and hoisin sauce.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Duck, hoisin, five-spice, cucumber, pancakes.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$24.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="dish-card" data-category="rice">
+        <div class="dish-img-container">
+            <img src="Beef fried rice.JPG.jpg" alt="Beef" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Beef Fried Rice</h4>
+            <p class="description">Savory beef stir-fried with fragrant jasmine rice, crisp vegetables, soy sauce, and a hint of garlic, creating a flavorful and satisfying classic Chinese dish.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Beef, jasmine rice, soy sauce, garlic, carrots, peas, spring onions, and eggs.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="dish-card" data-category="noodles">
+        <div class="dish-img-container">
+            <img src="Chow mein.JPG.jpg" alt="Beef" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Chow Mein</h4>
+            <p class="description">Tender chicken stir-fried with golden noodles, crunchy vegetables, and a savory soy-based sauce for a deliciously satisfying Chinese favorite.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Chicken, egg noodles, soy sauce, garlic, cabbage, carrots, bell peppers, and spring onions.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="noodles">
+        <div class="dish-img-container">
+            <img src="Dan dan noodles.JPG.png" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Dan Dan Noodles</h4>
+            <p class="description">Spicy and savory halal noodles tossed with minced chicken, crunchy peanuts, and a rich sesame-chili sauce, delivering a bold and irresistible flavor in every bite.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Chicken, egg noodles, soy sauce, garlic, cabbage, carrots, bell peppers, and spring onions.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+     <div class="dish-card" data-category="noodles">
+        <div class="dish-img-container">
+            <img src="Seafood noodles.JPG.png" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Seafood noodles</h4>
+            <p class="description">Succulent shrimp and fish stir-fried with tender noodles, crisp vegetables, and a savory soy-garlic sauce, creating a flavorful and satisfying seafood delight.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Shrimp, white fish, egg or wheat noodles, soy sauce, garlic, ginger, bell peppers, carrots, and spring onions.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="dimsum">
+        <div class="dish-img-container">
+            <img src="Jiaozi.JPG.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Jiaozi</h4>
+            <p class="description">Soft, tender dumplings filled with flavorful minced chicken or beef and fresh vegetables, served steamed or pan-fried with a savory soy dipping sauce — a beloved Chinese dim sum classic.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Minced chicken or beef, cabbage, garlic, ginger, soy sauce, sesame oil, and dumpling wrappers.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$8.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="dimsum">
+        <div class="dish-img-container">
+            <img src="Spring rolls.JPG.jpg" alt="rolls" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Spring Rolls</h4>
+            <p class="description">Crispy golden rolls stuffed with tender chicken, fresh vegetables, and savory seasonings, served with a tangy dipping sauce — a crunchy Chinese favorite.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">chicken, cabbage, carrots, garlic, ginger, soy sauce, spring roll wrappers, and oil for frying.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$7.00</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dimsum">
+        <div class="dish-img-container">
+            <img src="Chicken Bao.JPG.png" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Chicken Bao</h4>
+            <p class="description">Soft, fluffy steamed buns filled with tender halal chicken and savory seasonings, offering a warm and comforting bite of classic Chinese dim sum.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Chicken, soy sauce, garlic, ginger, sesame oil, sugar, and steamed bao buns.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$6.00</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="dimsum">
+        <div class="dish-img-container">
+            <img src="Shrimp har gow.JPG.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Shrimp Har Gow</h4>
+            <p class="description">Delicate, translucent dumplings filled with succulent halal shrimp, lightly seasoned and steamed to perfection — a classic dim sum favorite.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Shrimp, bamboo shoots, ginger, sesame oil, salt, and translucent dumpling wrappers.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$10.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="soups">
+        <div class="dish-img-container">
+            <img src="Hot and sour soup.JPG.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Hot and Sour Soup</h4>
+            <p class="description">A flavorful blend of chicken, tofu, mushrooms, and bamboo shoots in a tangy, spicy broth, delivering a perfect balance of heat and zest in every spoonful.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Chicken, tofu, mushrooms, bamboo shoots, soy sauce, vinegar, chili paste, garlic, ginger, and cornstarch.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$7.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="soups">
+        <div class="dish-img-container">
+            <img src="Chicken corn soup.JPG.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Chicken Corn Soup</h4>
+            <p class="description">Silky and comforting, this chicken soup is enriched with sweet corn, tender chicken, and a hint of pepper, creating a warm and flavorful classic.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Chicken, sweet corn, chicken broth, eggs, soy sauce, garlic, ginger, and pepper.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="soups">
+        <div class="dish-img-container">
+            <img src="Wonton soup.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Wonton Soup</h4>
+            <p class="description">Savory wontons stuffed with tender chicken, floating in a clear, flavorful broth with crisp vegetables — a comforting and classic Chinese favorite.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Minced chicken, wonton wrappers, garlic, ginger, soy sauce, sesame oil, chicken broth, and bok choy or spring onions.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$8.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="Green tea.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Green Tea</h4>
+            <p class="description">Refreshing and soothing, this classic Chinese beverage is lightly brewed from premium green tea leaves, offering a delicate aroma and gentle, natural flavor.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">High-quality green tea leaves and hot water.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$1.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="Jasmine tea.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Jasmine Tea</h4>
+            <p class="description">Fragrant and calming, this traditional Chinese tea blends premium green tea leaves with delicate jasmine blossoms, delivering a soothing floral aroma and smooth, refreshing taste.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Green tea leaves, jasmine flowers, and hot water.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$1.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="Bubble tea.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Bubble Tea</h4>
+            <p class="description">Sweet and fun, this creamy tea is mixed with chewy tapioca pearls and your choice of flavors, offering a delightful burst of texture and taste in every sip.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Brewed tea (black or green), milk or non-dairy creamer, sugar or syrup, and tapioca pearls.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="Soy Milk.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Soy Milk</h4>
+            <p class="description">Smooth, creamy, and naturally nutty, this traditional Chinese drink is made from fresh soybeans, offering a wholesome and refreshing beverage.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Soaked soybeans, water, and a touch of sugar (optional).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$1.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+     <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="Oolong tea.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Oolong tea</h4>
+            <p class="description">Elegant and aromatic, this traditional Chinese tea offers a smooth, slightly floral flavor with a hint of natural sweetness, perfect for a calming refreshment.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Oolong tea leaves and hot water.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$2.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dish-card" data-category="dimsum">
+        <div class="dish-img-container">
+            <img src="Vegetable Dumplings.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Vegetable Dumplings</h4>
+            <p class="description">Tender dumplings filled with a mix of fresh, flavorful vegetables, steamed or pan-fried to perfection and served with a savory soy dipping sauce — a light and delicious Chinese favorite.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Cabbage, carrots, mushrooms, garlic, ginger, soy sauce, sesame oil, and dumpling wrappers.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$6.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="Almond jelly.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Almond Jelly</h4>
+            <p class="description">Silky, delicate, and lightly sweet, this classic Chinese dessert is flavored with almond essence and served chilled, offering a refreshing and smooth treat.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Agar-agar or gelatin, almond extract, sugar, and water, often served with canned fruit or syrup.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="Jian dui.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Jian Dui</h4>
+            <p class="description">Crispy golden balls with a chewy glutinous rice exterior, filled with sweet red bean paste and coated in toasted sesame seeds — a classic Chinese dessert that’s crunchy, soft, and irresistibly delicious.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Glutinous rice flour, red bean paste, sugar, water, and sesame seeds.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$6.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="Red bean soup.JPG.png" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Red Bean Soup</h4>
+            <p class="description">Sweet and comforting, this classic Chinese dessert soup is made with tender red beans simmered to perfection with a touch of sugar, offering a warm and satisfying treat.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Red beans, water, and sugar, optionally flavored with dried tangerine peel.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="soups">
+        <div class="dish-img-container">
+            <img src="Egg drop soup.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Egg Drop Soup</h4>
+            <p class="description">Silky strands of egg float in a flavorful halal chicken broth, lightly seasoned with soy sauce and a hint of pepper — a warm and comforting Chinese classic.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Halal chicken broth, eggs, soy sauce, cornstarch, garlic, and white pepper.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="rice">
+        <div class="dish-img-container">
+            <img src="Egg fried rice.JPG.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Egg Fried Rice</h4>
+            <p class="description">Fluffy jasmine rice stir-fried with scrambled eggs, fresh vegetables, and a hint of soy sauce, creating a simple yet flavorful Chinese classic.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Jasmine rice, eggs, soy sauce, garlic, carrots, peas, spring onions, and oil.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div></div>
+
+
+
+
+    <footer class="contact-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p> 123 Silk Road, Food District</p>
+            <p> +1 234 567 890</p>
+            <p> info@chinesecuisine.com</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 11:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 10:00 AM - 11:00 PM</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Chinese Cuisine | All Rights Reserved</p>
+    </div>
+</footer>
+
+
+
+<script src="m.js"></script>
+</body>
+
+

@@ -1,0 +1,545 @@
+<!DOCTYPE html> 
+<!-- it tells the web browser that i am using html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- This ensures your website can display almost any character or symbol from any language correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this makes the website responsive -->
+    <title>Arabian Cuisine</title>
+    <link rel="stylesheet" href="m4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
+</head>
+<body id="arabbdy">
+<header>
+    <!-- header and sections are semantic tags they tell that this is a particular part -->
+    <section class="hero-arabian">
+    <div class="hero-content">
+        <h1>Arabian Cuisine</h1>
+        <p class="p1">Arabian cuisine is a soulful celebration of hospitality and spice. <br>Defined by fragrant grains, tender meats, and vibrant mezze, it balances<br> bold flavors like sumac and saffron with fresh herbs. Every dish reflects a rich history <br>of trade and the timeless tradition of sharing food with generosity.</p>
+    </div>
+</section></header>
+<input type="button" value="Go to Home page" id="home-btn"><br>
+    <nav class="navbar">
+<ul>
+    <li><a href="#" data-filter="all">All Dishes</a></li>
+    <!-- These are Custom Data Attributes. They don't change how the site looks, but they act like "sticky notes" that your JavaScript uses to know which dishes to show or hide. "a" tag defines the link  behaiviour and the "#" This is a "placeholder." It tells the browser, "Stay on this page, but treat this as a clickable link." -->
+    <li><a href="#" data-filter="mezze">Mezze</a></li>
+    <li><a href="#" data-filter="wraps">Wraps</a></li>
+    <li><a href="#" data-filter="rice">Rice</a></li>
+    <li><a href="#" data-filter="stews">Stews</a></li>
+    <li><a href="#" data-filter="drinks">Drinks</a></li>
+    <li><a href="#" data-filter="dessert">Desserts</a></li>
+</ul>
+</nav>
+<div class="dishes-container">
+
+    <div class="dish-card" data-category="mezze">
+        <div class="dish-img-container">
+            <img src="arabian/Hummus.jpg" alt="Fried Rice" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Hummus</h4>
+            <p class="description">It is made by blending cooked chickpeas with tahini (toasted sesame paste), fresh lemon juice, and garlic. The result is a rich, nutty, and incredibly smooth spread.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Cooked chickpeas, tahini, fresh lemon juice, garlic, extra virgin olive oil, sea salt, and cumin.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.50</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="dish-card" data-category="mezze">
+        <div class="dish-img-container">
+            <img src="arabian/Falafel.jpg" alt="Chicken" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Falafel</h4>
+            <p class="description">Traditionally made from soaked ground chickpeas (or fava beans) mixed with a vibrant bouquet of fresh parsley, cilantro, and garlic, they are spiced with cumin and coriander before being deep-fried to perfection.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Dried chickpeas (soaked), fresh parsley, cilantro, onions, garlic, cumin, coriander, and sea salt.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$11.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="dish-card" data-category="mezze">
+        <div class="dish-img-container">
+            <img src="arabian/Tabbouleh.jpg" alt="duck" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Tabbouleh</h4>
+            <p class="description">It is a vibrant, finely chopped salad where fresh flat-leaf parsley is the undisputed star, rather than the grain. Mixed with mint, juicy tomatoes, and crunchy scallions, it is lightly bound by a small amount of bulgur wheat.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Finely chopped flat-leaf parsley, fresh mint, firm red tomatoes, scallions (spring onions), fine bulgur wheat, fresh lemon juice, extra virgin olive oil, and sea salt.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$10.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="dish-card" data-category="mezze">
+        <div class="dish-img-container">
+            <img src="arabian/Baba Ganoush.jpg" alt="Beef" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Baba Ganoush</h4>
+            <p class="description">Baba Ganoush is a soulful, smoky dip made from eggplants that have been roasted over an open flame until the skin is charred and the flesh is buttery soft. This "smokiness" is the dish's signature, which is then blended with creamy tahini, garlic, and lemon juice.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fire-roasted eggplant, tahini, garlic, fresh lemon juice, sea salt, and extra virgin olive oil.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$8.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="dish-card" data-category="mezze">
+        <div class="dish-img-container">
+            <img src="arabian/Warak enab.png" alt="Beef" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Warak Enab</h4>
+            <p class="description">Warak Enab consists of tender grape leaves stuffed with a savory mixture of rice, finely chopped herbs, and aromatic spices. When prepared in the "bi-zeit" (with oil) style, they are strictly vegetarian, simmered slowly in a bath of lemon juice and high-quality olive oil until the leaves are silky and the rice is perfectly infused with citrus.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Grape leaves (vine leaves), short-grain rice, fresh parsley, mint, tomatoes, onions, lemon juice, extra virgin olive oil, and a touch of Lebanese seven-spice.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="wraps">
+        <div class="dish-img-container">
+            <img src="arabian/Shawarma.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Shawarma</h4>
+            <p class="description">Shawarma is a culinary spectacle. It features thin cuts of marinated meat—typically lamb, beef, or chicken—stacked in a cone shape on a vertical rotisserie. As the meat slowly rotates against a heat source, the outer layer roasts to a perfect, spiced crisp while the interior remains incredibly succulent.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Marinated meat (lamb, beef, or chicken), a spice blend (cumin, cardamom, turmeric, cinnamon, cloves), lemon juice, garlic, and vinegar. Served with tahini or garlic sauce.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+     <div class="dish-card" data-category="wraps">
+        <div class="dish-img-container">
+            <img src="arabian/Manakish.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Manakish</h4>
+            <p class="description">Manakish (or Man’oushe) is a traditional flatbread where the dough is pressed with fingertips to create little indentations—perfect for holding flavorful toppings. The most classic version is topped with a generous amount of Za'atar (a savory blend of dried thyme, oregano, marjoram, toasted sesame seeds, and sumac) mixed with high-quality olive oil.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Wheat flour dough, extra virgin olive oil, and toppings (Za'atar blend, Akkawi or Halloumi cheese, or spiced ground meat).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="wraps">
+        <div class="dish-img-container">
+            <img src="arabian/Arayes.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Arayes</h4>
+            <p class="description">Arayes are essentially pita bread pockets stuffed with a thin, even layer of seasoned minced lamb or beef. Once stuffed, the pita is brushed generously with olive oil and then grilled or toasted until the bread becomes incredibly crispy and golden, while the meat inside steams in its own juices and spices.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh pita bread, minced lamb or beef, onions, parsley, and a blend of spices (typically allspice, cinnamon, and black pepper).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="wraps">
+        <div class="dish-img-container">
+            <img src="arabian/Fatayer.jpg" alt="rolls" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Fatayer</h4>
+            <p class="description">Fatayer are small, handheld savory pies that are a staple of Levantine bakeries. They are most recognized by their distinct shapes: triangles for spinach (Sabanekh), boat-shapes for cheese (Jibneh), or open-faced rounds for meat.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Soft wheat dough, fresh spinach or Akkawi/Feta cheese, onions, sumac, lemon juice, pine nuts, and extra virgin olive oil.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$16.00</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="wraps">
+        <div class="dish-img-container">
+            <img src="arabian/Kibbeh.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Kibbeh</h4>
+            <p class="description">Kibbeh is a masterpiece of Mediterranean texture. It is a football-shaped croquette made from a dough of very finely ground lean beef or lamb mixed with soaked bulgur wheat, onions, and aromatic spices. This shell is stuffed with a "hashwi" (filling) of sautéed minced meat, onions, and toasted pine nuts.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fine bulgur wheat, lean ground beef or lamb, onions, pine nuts, and "Kibbeh spices" (allspice, cinnamon, cloves, and nutmeg).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$20.00</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="rice">
+        <div class="dish-img-container">
+            <img src="arabian/Kabsa.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Kabsa</h4>
+            <p class="description">Kabsa is a majestic, fragrant rice dish that serves as the national dish of Saudi Arabia and is beloved across the Gulf. Unlike the constant stirring required for Risotto, Kabsa is prepared by simmering long-grain Basmati rice in a rich broth infused with a complex blend of "black" lime (loomi), cardamom, cloves, cinnamon, and bay leaves.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Basmati rice, chicken or lamb, Kabsa spice mix (black lime, saffron, cardamom, etc.), onions, garlic, tomatoes, and toasted nuts.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$22.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="rice">
+        <div class="dish-img-container">
+            <img src="arabian/mankash.png" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Mansaf</h4>
+            <p class="description">Mansaf is a dish of deep cultural significance, traditionally served on large circular platters to be shared by a group. It features tender chunks of lamb cooked in a rich, creamy sauce made from rehydrated Jameed. The meat and its flavorful sauce are served over a bed of yellow turmeric-stained rice, which sits atop a layer of thin Markook (shrak) flatbread.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Lamb, Jameed (fermented dried yogurt), Basmati or short-grain rice, Markook bread, turmeric, and toasted nuts.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$22.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="rice">
+        <div class="dish-img-container">
+            <img src="arabian/maqluba.png" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Maqluba</h4>
+            <p class="description">Maqluba is a spectacular "one-pot" dish consisting of layers of meat (usually chicken or lamb), fried vegetables (typically eggplant, cauliflower, and potatoes), and aromatic rice. These are packed tightly into a pot and simmered until the flavors meld perfectly.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Long-grain rice, fried eggplant, cauliflower, potatoes, chicken or lamb, and a spice blend of allspice, cinnamon, turmeric, and cloves.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$8.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="stews">
+        <div class="dish-img-container">
+            <img src="arabian/Shish Taouk.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Shish Taouk</h4>
+            <p class="description">Shish Taouk is a masterclass in the art of the marinade. Cubes of chicken breast are soaked for hours in a mixture of yogurt, lemon juice, plenty of garlic, and a touch of tomato paste or paprika for color.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Chicken breast, yogurt, garlic, lemon juice, olive oil, tomato paste, and a spice blend (paprika, oregano, cinnamon, and ginger).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <div class="dish-card" data-category="stews">
+        <div class="dish-img-container">
+            <img src="arabian/Kofta Kebab.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Kofta Kebab</h4>
+            <p class="description">Kofta Kebab consists of finely minced lamb or beef (or a blend of both) mixed with a generous amount of flat-leaf parsley, grated onions, and a signature blend of warm spices. The meat is molded by hand onto long, flat metal skewers, creating a distinct "rippled" shape, and then grilled over hot charcoals.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Minced lamb or beef, fresh parsley, onions, garlic, and "Kofta spice" (typically allspice, cinnamon, black pepper, and sometimes a hint of chili).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="stews">
+        <div class="dish-img-container">
+            <img src="arabian/Shakshuka.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Shakshuka</h4>
+            <p class="description">Shakshuka is a rustic, one-pan dish that is as visually stunning as it is delicious. It features eggs poached directly in a thick, simmering sauce of stewed tomatoes, roasted bell peppers, onions, and garlic. The sauce is heavily spiced with cumin, paprika, and often a touch of chili for heat.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Eggs, ripe tomatoes, red bell peppers, onions, garlic, tomato paste, cumin, smoked paprika, and extra virgin olive oil.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$12.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="arabian/Gahwa.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Gahwa</h4>
+            <p class="description">Gahwa is much more than a drink; it is a symbol of generosity across the Arabian Peninsula. Unlike the dark, oily roast of Italian coffee, Gahwa uses lightly roasted (sometimes almost green) beans.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Lightly roasted ground coffee beans, green cardamom pods, saffron threads, and sometimes cloves or rosewater.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="arabian/Mint Tea.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Mint Tea</h4>
+            <p class="description">Mint Tea is a cornerstone of social life across North Africa and the Levant. It is a specific blend of Chinese gunpowder green tea, a massive handful of fresh spearmint leaves, and a generous amount of sugar.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Gunpowder green tea, large bunches of fresh spearmint, water, and sugar.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+     <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="arabian/jallab.png" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Jallab</h4>
+            <p class="description">Jallab is a refreshing, dark amber beverage made from a syrup of dates, grape molasses, and rose water. It is diluted with water and served over a mountain of crushed ice. What makes Jallab truly unique is the "smoking" of the syrup with incense (mastic) and the garnish: it is traditionally topped with pine nuts and golden raisins.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Date and grape molasses, rose water, water, crushed ice, pine nuts, and golden raisins.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$2.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="arabian/ayran.png" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Ayran</h4>
+            <p class="description">Ayran is a simple yet genius blend of yogurt, water, and sea salt. It is whisked or churned until it develops a thin, frothy head and is served ice-cold. Unlike Western yogurt drinks that lean toward fruit and sugar, Ayran is crisp, tart, and salty.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh yogurt (cow or goat), chilled water, and a pinch of sea salt. (Sometimes garnished with dried mint).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$3.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="arabian/Baklava.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Baklava</h4>
+            <p class="description">Baklava is a triumph of geometry and patience. It consists of dozens of layers of paper-thin phyllo pastry, each brushed with clarified butter (ghee) and stacked with a generous filling of crushed pistachios, walnuts, or cashews.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Phyllo dough, clarified butter, pistachios or walnuts, sugar, lemon juice, and orange blossom or rose water.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="arabian/Kunafa.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Kunafa</h4>
+            <p class="description">Kunafa is a mesmerizing dessert made of a base of melted, stretchy Nabulsi or Akkawi cheese, topped with a crown of either crunchy, shredded phyllo pastry (Khishnah) or fine semolina crumbs (Na'ameh). It is baked in large circular trays until the top is golden and the cheese is molten.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Shredded phyllo or semolina dough, Akkawi or Nabulsi cheese (often desalted), clarified butter (ghee), sugar syrup, rose water, and pistachios.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$10.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="arabian/Basbousa.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Basbousa</h4>
+            <p class="description">Basbousa is a traditional Middle Eastern cake made from semolina, which gives it a distinct, slightly grainy, and satisfying crumb. The batter is often enriched with yogurt and desiccated coconut, then baked until the edges are caramelized.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Semolina, yogurt, butter or ghee, sugar, coconut, and a lemon or orange blossom water syrup.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div></div>
+
+
+
+
+    <footer class="contact-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p> 123 Silk Road, Food District</p>
+            <p> +1 234 567 890</p>
+            <p> info@arabiancuisine.com</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 11:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 10:00 AM - 11:00 PM</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Arabian Cuisine | All Rights Reserved</p>
+    </div>
+</footer>
+
+
+
+<script src="m3.js"></script>
+</body>
+
+

@@ -1,0 +1,524 @@
+<!DOCTYPE html> 
+<!-- it tells the web browser that i am using html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- This ensures your website can display almost any character or symbol from any language correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this makes the website responsive -->
+    <title>Japanese Cuisine</title>
+    <link rel="stylesheet" href="m2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
+</head>
+<body id="japbdy">
+<header>
+    <!-- header and sections are semantic tags they tell that this is a particular part -->
+    <section class="hero-japanese">
+    <div class="hero-content">
+        <h1>Japanese Cuisine</h1>
+        <p class="p1">Embark on a journey through the refined world of Japanese gastronomy,<br> where every dish is a masterpiece of balance and tradition.<br> From the delicate precision of edomae sushi to the soul-warming depths <br>of authentic ramen, discover a culinary heritage built on the purest ingredients.</p>
+    </div>
+</section></header>
+<input type="button" value="Go to Home page" id="home-btn"><br>
+    <nav class="navbar">
+<ul>
+    <li><a href="#" data-filter="all">All Dishes</a></li>
+    <!-- These are Custom Data Attributes. They don't change how the site looks, but they act like "sticky notes" that your JavaScript uses to know which dishes to show or hide. "a" tag defines the link  behaiviour and the "#" This is a "placeholder." It tells the browser, "Stay on this page, but treat this as a clickable link." -->
+    <li><a href="#" data-filter="sushi">Sushi</a></li>
+    <li><a href="#" data-filter="ramen">Ramen</a></li>
+    <li><a href="#" data-filter="tempura">Tempura</a></li>
+    <li><a href="#" data-filter="donburi">Donburi</a></li>
+    <li><a href="#" data-filter="drinks">Drinks</a></li>
+    <li><a href="#" data-filter="dessert">Desserts</a></li>
+</ul>
+</nav>
+<div class="dishes-container">
+
+    <div class="dish-card" data-category="sushi">
+        <div class="dish-img-container">
+            <img src="salmon nigiri.jpg" alt="Fried Rice" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Salmon Nigiri</h4>
+            <p class="description">Vibrant, marble-textured salmon draped over artisan-crafted sushi rice. One bite reveals a rich, melt-in-your-mouth texture that defines the soul of the Japanese sea.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Sashimi-grade Atlantic salmon, premium short-grain sushi rice, vinegar, sea salt, organic sugar, fresh wasabi, and soy sauce.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="dish-card" data-category="sushi">
+        <div class="dish-img-container">
+            <img src="maguro nigiri.jpg" alt="Chicken" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Maguro Nigiri</h4>
+            <p class="description">This classic features a hand-cut slice of lean, ruby-red Bluefin tuna prized for its firm texture and clean finish. Each piece is expertly balanced atop a pillow of short-grain rice seasoned with vinegar, finished with a touch of fresh wasabi for a subtle, spicy kick.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">ashimi-grade Bluefin tuna, premium short-grain sushi rice, vinegar, sea salt, organic sugar, fresh wasabi, and halal soy sauce.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$6.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="dish-card" data-category="sushi">
+        <div class="dish-img-container">
+            <img src="kappa maki.jpg" alt="duck" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Kappa Maki</h4>
+            <p class="description">Kappa Maki features crunchy, julienned Japanese cucumber wrapped in a delicate sheet of nori seaweed and seasoned short-grain rice. Prepared with vinegar, this simple yet elegant roll offers a clean, crunchy texture that serves as the perfect vegetarian accompaniment to any Japanese feast.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh Japanese cucumber, premium short-grain sushi rice, dried nori seaweed, vinegar, sea salt, organic sugar, and optional toasted sesame seeds.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="dish-card" data-category="sushi">
+        <div class="dish-img-container">
+            <img src="avocado rolls.jpg" alt="Beef" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Avocado Rolls</h4>
+            <p class="description">This roll features perfectly ripe, buttery avocado slices encased in premium short-grain rice and crisp nori seaweed. Seasoned with vinegar, sea salt, and sugar, it offers a clean and velvety flavor profile that is both simple and deeply rewarding.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Ripe avocado, premium short-grain sushi rice, dried nori seaweed, halal-certified vinegar, sea salt, organic sugar, and optional toasted sesame seeds.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$6.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="dish-card" data-category="sushi">
+        <div class="dish-img-container">
+            <img src="Inarizushi.png" alt="Beef" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Inarizushi</h4>
+            <p class="description">These golden pouches consist of fried tofu (abura-age) that has been simmered in a halal-friendly broth until juicy and tender. Each pouch is stuffed with premium short-grain rice seasoned with halal-certified vinegar, offering a satisfying, plump bite that perfectly balances the sweetness of the tofu with the tang of the sushi rice.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fried tofu pouches (abura-age), premium short-grain sushi rice, halal-certified vinegar, sea salt, organic sugar, water, and halal soy sauce.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$6.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="ramen">
+        <div class="dish-img-container">
+            <img src="tori paiten ramen.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Tori Paitan Ramen</h4>
+            <p class="description">Unlike traditional clear broths, this "white soup" is created by slow-simmering chicken bone broth for hours until it reaches a thick, milky consistency packed with natural collagen. Served with chewy wheat noodles and topped with tender halal chicken slices, this bowl offers a deeply satisfying, savory umami experience that is both hearty and refined.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Slow-simmered chicken bone broth, artisanal wheat noodles, halal-certified soy sauce, sea salt, tender chicken slices, green onions, bamboo shoots (menma), wood ear mushrooms, and nori seaweed.
+                  </div> </details>
+            <div class="price-row">
+                <span class="price">$15.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+     <div class="dish-card" data-category="ramen">
+        <div class="dish-img-container">
+            <img src="miso ramen.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Miso Ramen</h4>
+            <p class="description">This bowl features a robust broth made from fermented soybean paste (miso) and a slow-simmered chicken base, creating a complex, umami-forward flavor. Paired with springy wheat noodles and topped with succulent grilled chicken, it offers a satisfying balance of textures and a comforting warmth that lingers with every spoonful.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fermented miso paste, halal chicken broth, artisanal wheat noodles, grilled halal chicken breast, soft-boiled egg (optional), corn, green onions, bean sprouts, and halal soy sauce.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$15.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="ramen">
+        <div class="dish-img-container">
+            <img src="veggie shoyu ramen.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Veggie Shoyu Ramen</h4>
+            <p class="description">The soul of this bowl is a light yet complex broth made from a simmered vegetable stock infused with a premium halal-certified soy sauce (shoyu) blend. Served with springy wheat noodles and topped with a colorful array of fresh vegetables, it offers a perfectly balanced and deeply nostalgic taste of Tokyo’s traditional ramen culture.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">House-made vegetable stock, halal-certified soy sauce, artisanal wheat noodles, bok choy, bamboo shoots, wood ear mushrooms, corn, green onions, and nori seaweed.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$16.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="ramen">
+        <div class="dish-img-container">
+            <img src="dry mazesoba.jpg" alt="rolls" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Dry Mazesoba</h4>
+            <p class="description">This dish features thick, chewy wheat noodles tossed in a savory halal-certified soy-based sauce and aromatic oils. Topped with a mountain of flavorful ingredients, including savory minced halal chicken, it is designed to be mixed together, allowing every strand of noodle to be coated in a creamy, umami-rich glaze for a truly satisfying experience.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Thick wheat noodles, minced halal chicken, halal-certified soy sauce, garlic, green onions, nori seaweed, bamboo shoots, and a fresh egg yolk (optional).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$16.00</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="tempura">
+        <div class="dish-img-container">
+            <img src="ebi tempura.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Ebi Tempura</h4>
+            <p class="description">We take succulent, jumbo shrimp and coat them in a delicate, ice-cold tempura batter before flash-frying them to a pale, golden crisp. This method ensures the shrimp remains tender and sweet on the inside while the outside stays airy and light, providing a satisfying shatter with every bite.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh jumbo shrimp, tempura wheat flour, ice-cold filtered water, cornstarch, vegetable frying oil, sea salt, and a side of halal-certified dipping sauce (tentsuyu).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$11.00</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="tempura">
+        <div class="dish-img-container">
+            <img src="yasai tempura.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Yasai Tempura</h4>
+            <p class="description">Each piece is lightly dusted in premium wheat flour and dipped in a signature ice-cold tempura batter for a result that is incredibly airy and crisp. Flash-fried to golden perfection, these vegetables retain their garden-fresh crunch and nutrients, offering a sophisticated play of textures that is both light and deeply satisfying.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Seasonal vegetables (such as sweet potato, eggplant, bell pepper, and kabocha squash), tempura wheat flour, ice-cold filtered water, cornstarch, vegetable frying oil, and a side of halal-certified tentsuyu dipping sauce.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$10.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="tempura">
+        <div class="dish-img-container">
+            <img src="shiitaake tempura.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Shiitaake Tempura</h4>
+            <p class="description">We select plump, meaty shiitake mushrooms and coat them in our signature light tempura batter. Once flash-fried, the mushrooms develop a delicate, golden crust that shatters beautifully to reveal a juicy, savory interior.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh shiitake mushrooms, tempura wheat flour, ice-cold filtered water, cornstarch, vegetable frying oil, sea salt, and a side of halal-certified tentsuyu dipping sauce.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$7.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <div class="dish-card" data-category="donburi">
+        <div class="dish-img-container">
+            <img src="oyakodon.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Oyakodon</h4>
+            <p class="description">This dish features tender pieces of halal chicken and sweet onions simmered in a savory halal-certified soy sauce and dashi broth. As the mixture bubbles, whisked eggs are drizzled over the top and cooked until just set and silky, creating a rich, velvety blanket served over a steaming bed of short-grain rice.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Bite-sized halal chicken thigh, whisked eggs, yellow onions, premium short-grain rice, halal-certified soy sauce, sugar, sea salt, halal vegetable dashi, and garnished with fresh mitsuba or green onions.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$11.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="donburi">
+        <div class="dish-img-container">
+            <img src="tendon.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Tendon</h4>
+            <p class="description">This dish features a generous assortment of crispy ebi (shrimp) and seasonal vegetable tempura resting on a bed of fluffy short-grain rice. The entire bowl is drizzled with a rich, sweet-savory halal-certified tendon sauce.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Ebi tempura (shrimp), assorted vegetable tempura, premium short-grain rice, halal-certified soy sauce, sugar, sea salt, halal vegetable dashi, and a signature sweet tempura glaze.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$15.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="matcha.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Matcha</h4>
+            <p class="description">This traditional beverage is prepared by whisking high-quality stone-ground tea leaves with hot water until a delicate, frothy foam forms on the surface. Known for its earthy, slightly bitter profile and natural umami, it provides a gentle energy boost and serves as the perfect, antioxidant-rich palate cleanser to follow a savory meal.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Premium stone-ground green tea powder (Matcha) and hot filtered water.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="hojicha.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Hojicha</h4>
+            <p class="description">Unlike traditional green teas, the roasting process transforms the leaves into a deep reddish-brown color, replacing the usual grassy notes with a toasty, nutty flavor and hints of caramel. Naturally lower in caffeine and acidity, it offers a gentle, smoky finish that makes it an exceptionally calming beverage to enjoy at any time of day.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Roasted Japanese green tea leaves (Bancha or Sencha) and hot filtered water.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+     <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="mugicha.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Mugicha</h4>
+            <p class="description">This infusion is made from roasted barley grains, resulting in a brew that is remarkably smooth with a deep, toasty aroma and a flavor profile reminiscent of roasted nuts or coffee beans, but without the bitterness. Served chilled in the summer for a crisp, hydrating escape or warm in the winter for a cozy finish, it is a versatile and wholesome beverage for all ages.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Roasted premium barley grains and filtered water.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="ramune.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Ramune</h4>
+            <p class="description">Famous for its unique "Codd-neck" glass bottle, this refreshing soda is sealed with a glass marble that you push down into a special chamber to release the fizz. With its bubbly personality and mild, fruity sweetness—traditionally a lemon-lime "bubblegum" flavor—it is a fun and interactive favorite for both children and adults alike.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Carbonated water, sugar, high fructose corn syrup, citric acid, and natural lemon-lime flavorings.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="daifuku mochi.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Daifuku Mochi</h4>
+            <p class="description">These handcrafted treats feature a soft, chewy outer layer made from pounded glutinous rice (mochi), delicately dusted with cornstarch to prevent sticking. Inside lies a generous heart of sweet red bean paste (anko), creating a satisfying, dense, and velvety bite that has been a staple of Japanese teatime for centuries.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Glutinous rice flour, water, organic sugar, sweet red bean paste (azuki beans), and cornstarch (for dusting).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="mitarashi dango.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Mitarashi Dango</h4>
+            <p class="description">These skewered treats consist of three to five chewy rice flour dumplings that have been lightly grilled to create a subtle charred aroma and a slightly crisp exterior. They are generously glazed in a thick, translucent sweet-and-savory sauce made from a blend of soy sauce and sugar, offering a delightful contrast of textures and a rich umami finish.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Glutinous rice flour (shiratamako or joshinko), water, organic sugar, halal-certified soy sauce, and potato starch (for the glaze).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="taiyaki.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Taiyaki</h4>
+            <p class="description">These golden cakes are made from a sweet, waffle-like batter poured into detailed sea bream molds and baked until the exterior is perfectly crisp. Inside, you’ll find a warm, gooey center of sweet red bean paste (anko), though it can also be filled with creamy custard or chocolate.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Wheat flour, organic sugar, baking powder, eggs, milk (or water), and sweet red bean paste or custard filling.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="kakigori.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Kakigori</h4>
+            <p class="description">Unlike traditional snow cones, the ice is shaved to a fine, fluffy texture that melts instantly on the tongue. It is then generously drizzled with vibrant fruit syrups or traditional flavors and topped with indulgent extras like sweetened condensed milk, mochi pearls, or a dollop of sweet red bean paste, creating a refreshing and visually stunning dessert.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Purified shaved ice, flavored syrup (such as Matcha, Strawberry, or Melon), and optional toppings (condensed milk, azuki red beans, or small mochi pieces).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$11.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div></div></div>
+
+
+
+
+    <footer class="contact-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p> 123 Silk Road, Food District</p>
+            <p> +1 234 567 890</p>
+            <p> info@japanesecuisine.com</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 11:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 10:00 AM - 11:00 PM</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Japanese Cuisine | All Rights Reserved</p>
+    </div>
+</footer>
+
+
+
+<script src="m2.js"></script>
+</body>
+
+

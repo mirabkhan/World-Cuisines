@@ -1,0 +1,587 @@
+<!DOCTYPE html> 
+<!-- it tells the web browser that i am using html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- This ensures your website can display almost any character or symbol from any language correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this makes the website responsive -->
+    <title>Italian Cuisine</title>
+    <link rel="stylesheet" href="m3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap">
+</head>
+<body id="itabdy">
+<header>
+    <!-- header and sections are semantic tags they tell that this is a particular part -->
+    <section class="hero-italian">
+    <div class="hero-content">
+        <h1>Italian Cuisine</h1>
+        <p class="p1">Italian cuisine is the art of simplicity, where high-quality ingredients speak for themselves.<br> Rooted in tradition and fresh flavors, it celebrates a perfect balance of sun-ripened tomatoes,<br> fragrant basil, and artisanal grains. From the hearth-baked pizzas of Naples<br> to the silky pastas of Rome, every dish is a tribute to the joy of gathering and <br>the timeless spirit of the Mediterranean.</p>
+    </div>
+</section></header>
+<input type="button" value="Go to Home page" id="home-btn"><br>
+    <nav class="navbar">
+<ul>
+    <li><a href="#" data-filter="all">All Dishes</a></li>
+    <!-- These are Custom Data Attributes. They don't change how the site looks, but they act like "sticky notes" that your JavaScript uses to know which dishes to show or hide. "a" tag defines the link  behaiviour and the "#" This is a "placeholder." It tells the browser, "Stay on this page, but treat this as a clickable link." -->
+    <li><a href="#" data-filter="pasta">Pasta</a></li>
+    <li><a href="#" data-filter="pizza">Pizza</a></li>
+    <li><a href="#" data-filter="risotto">Risotto</a></li>
+    <li><a href="#" data-filter="antipasta">Anti-pasta</a></li>
+    <li><a href="#" data-filter="drinks">Drinks</a></li>
+    <li><a href="#" data-filter="dessert">Desserts</a></li>
+</ul>
+</nav>
+<div class="dishes-container">
+
+    <div class="dish-card" data-category="pasta">
+        <div class="dish-img-container">
+            <img src="italian/Penne all'Arrabbiata.jpg" alt="Fried Rice" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Penne all'Arrabbiata</h4>
+            <p class="description">This dish features al dente penne pasta tossed in a robust tomato sauce made from simmered garlic and extra virgin olive oil. It is a bold, spicy, and soul-satisfying choice for those who appreciate the beauty of simple, high-quality Italian ingredients.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Penne rigate (durum wheat), peeled tomatoes, garlic, extra virgin olive oil, dried red chili flakes (peperoncino), fresh parsley, and a touch of sea salt. (Pecorino Romano or Parmesan cheese optional for garnish).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$14.50</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="dish-card" data-category="pasta">
+        <div class="dish-img-container">
+            <img src="italian/Spaghetti al Pomodoro.jpg" alt="Chicken" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Spaghetti al Pomodoro</h4>
+            <p class="description">This dish focuses on the purity of its ingredients, featuring al dente spaghetti tossed in a vibrant sauce of vine-ripened tomatoes gently sautéed with aromatic garlic and extra virgin olive oil. Finished with a handful of fresh basil, it offers a bright, sweet, and comforting flavor profile.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Artisanal spaghetti (durum wheat), premium San Marzano tomatoes, extra virgin olive oil, fresh garlic, sea salt, and hand-torn basil leaves. (Optional: A dusting of freshly grated Parmesan cheese).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$15.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="dish-card" data-category="pasta">
+        <div class="dish-img-container">
+            <img src="italian/Fettuccine Alfredo.jpg" alt="duck" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Fettuccine Alfredo</h4>
+            <p class="description">This dish features wide, ribbon-like fettuccine pasta tossed in a decadent, silky sauce crafted from melted butter and aged Parmesan cheese. As the cheese emulsifies with the warm pasta water, it creates a smooth, creamy coating that clings to every strand.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh fettuccine pasta (egg and durum wheat), unsalted butter, aged Parmigiano-Reggiano, heavy cream (optional for the American-style version), sea salt, and a crack of fresh black pepper.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$14.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="dish-card" data-category="pasta">
+        <div class="dish-img-container">
+            <img src="italian/Lasagna Bianca.jpg" alt="Beef" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Lasagna Bianca</h4>
+            <p class="description">This sophisticated dish is a celebration of creamy textures and delicate flavors. Instead of ragù, it features layers of silky béchamel sauce and a rich blend of cheeses—typically mozzarella, ricotta, and Parmigiano-Reggiano.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh pasta sheets, creamy béchamel sauce (butter, flour, milk, and nutmeg), ricotta cheese, shredded mozzarella, aged Parmigiano-Reggiano, garlic, and fresh herbs (such as thyme or rosemary).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$18.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="dish-card" data-category="pasta">
+        <div class="dish-img-container">
+            <img src="italian/Linguine alle Vongole.jpg" alt="Beef" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Linguine alle Vongole</h4>
+            <p class="description">The base is built from a delicate infusion of extra virgin olive oil, sautéed garlic, and a splash of white wine (or a non-alcoholic white wine substitute for a halal version), creating a savory brine that perfectly coats the noodles. Finished with a touch of chili and fresh parsley, it is a bright, briny, and sophisticated classic.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Linguine pasta, fresh clams in shell, extra virgin olive oil, garlic cloves, red chili flakes, fresh flat-leaf parsley, and sea salt.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="pizza">
+        <div class="dish-img-container">
+            <img src="italian/Pizza Margherita.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Pizza Margherita</h4>
+            <p class="description">This timeless classic features a thin, airy crust with a slightly charred, chewy edge (the cornicione). It is topped with a vibrant layer of crushed San Marzano tomatoes, rounds of fresh buffalo mozzarella, and hand-torn fresh basil leaves. A final drizzle of extra virgin olive oil brings all the flavors together.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Hand-stretched pizza dough (double-zero flour), San Marzano tomato sauce, fresh mozzarella (fior di latte or buffalo), fresh basil, extra virgin olive oil, and a pinch of sea salt.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$15.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+     <div class="dish-card" data-category="pizza">
+        <div class="dish-img-container">
+            <img src="italian/Pizza ai Funghi.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Pizza ai Funghi</h4>
+            <p class="description">This rustic pizza features a perfectly baked crust topped with an assortment of sautéed mushrooms—such as cremini, shiitake, or wild porcini—which provide a meaty texture and deep umami flavor.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Hand-stretched pizza dough, fresh mozzarella, assorted mushrooms (porcini, champignon, or oyster), garlic, extra virgin olive oil, and fresh thyme or parsley.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="pizza">
+        <div class="dish-img-container">
+            <img src="italian/Focaccia Barese.jpg" alt="Noodles" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Focaccia Barese</h4>
+            <p class="description">The dough traditionally incorporates boiled potatoes to achieve a unique softness, and it is generously topped with bursting cherry tomatoes and savory black olives. Drizzled with plenty of extra virgin olive oil and a sprinkle of dried oregano, it offers a perfect harmony of salty, tangy, and herbal notes.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">High-protein flour, semolina, mashed potato, fresh cherry tomatoes, Bari or Castelvetrano olives, extra virgin olive oil, sea salt, and dried oregano.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$8.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="pizza">
+        <div class="dish-img-container">
+            <img src="italian/Calzone Vegetariano.jpg" alt="rolls" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Calzone Vegetariano</h4>
+            <p class="description">This golden-brown turnover is crafted from our signature pizza dough, folded over a generous medley of garden-fresh vegetables and a molten blend of creamy ricotta and mozzarella cheeses. As it bakes, the interior steams to perfection, mingling the juices of the roasted peppers, zucchini, and spinach with the rich cheeses.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Hand-stretched pizza dough, fresh mozzarella, creamy ricotta, grilled bell peppers, sliced zucchini, baby spinach, mushrooms, and a side of warm marinara sauce for dipping.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$16.00</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="risotto">
+        <div class="dish-img-container">
+            <img src="italian/Risotto ai Funghi Porcini.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Risotto ai Funghi Porcini</h4>
+            <p class="description">his masterpiece of patience and technique features premium Arborio or Carnaroli rice, slowly simmered in a savory broth until it reaches a perfect all’onda consistency—creamy and flowing, yet with a slight bite at the center of each grain.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Superfino Carnaroli or Arborio rice, fresh or dried Porcini mushrooms, vegetable or chicken stock, shallots, garlic, extra virgin olive oil, unsalted butter, and aged Parmigiano-Reggiano.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$20.00</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="risotto">
+        <div class="dish-img-container">
+            <img src="italian/Risotto allo Zafferano.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Risotto allo Zafferano</h4>
+            <p class="description">Known for its brilliant golden hue, the risotto is crafted by slowly toasting Carnaroli or Arborio rice and simmering it with a delicate infusion of premium saffron threads. The result is a silky, sophisticated texture with a unique floral aroma and a subtle, honey-like earthiness.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Superfino Carnaroli or Arborio rice, vegetable or beef stock, saffron threads (stigmas), shallots, unsalted butter, and aged Parmigiano-Reggiano.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$22.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dish-card" data-category="risotto">
+        <div class="dish-img-container">
+            <img src="italian/Arancini.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Arancini</h4>
+            <p class="description">These golden, crispy spheres are made from creamy risotto rice that has been cooled, shaped, and stuffed with a savory center. They are coated in fine breadcrumbs and deep-fried to achieve a satisfying crunch that gives way to a warm, melting interior.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Arborio or Carnaroli rice, saffron (optional for color), breadcrumbs, and egg. Typical fillings include mozzarella and peas, or a savory mushroom and cheese blend. Served with a side of warm marinara sauce.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$7.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="antipasta">
+        <div class="dish-img-container">
+            <img src="italian/Bruschetta al Pomodoro.jpg" alt="buns" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Bruschetta al Pomodoro</h4>
+            <p class="description">This classic starter features thick slices of artisanal sourdough or ciabatta, grilled until charred and crunchy on the outside while remaining soft within. The warm bread is rubbed with a clove of raw garlic and topped with a vibrant mound of diced, vine-ripened tomatoes tossed in high-quality extra virgin olive oil.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Toasted rustic bread, ripe Roma or cherry tomatoes, fresh garlic, extra virgin olive oil, fresh basil leaves, sea salt, and a crack of black pepper. (Optional: A drizzle of balsamic glaze).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$8.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="antipasta">
+        <div class="dish-img-container">
+            <img src="italian/Caprese Salad.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Caprese Salad</h4>
+            <p class="description">Caprese Salad features thick slices of creamy buffalo mozzarella nestled between rounds of sun-ripened, juicy tomatoes. Layered with fragrant fresh basil leaves and finished with a generous drizzle of premium extra virgin olive oil and a pinch of flaky sea salt.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh Mozzarella di Bufala (or Fior di Latte), ripe vine tomatoes, fresh large-leaf basil, premium extra virgin olive oil, sea salt, and freshly cracked black pepper. (Optional: A light drizzle of aged balsamic reduction).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$13.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <div class="dish-card" data-category="antipasta">
+        <div class="dish-img-container">
+            <img src="italian/Polenta Fries.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Polenta Fries</h4>
+            <p class="description">These golden batons are crafted from slow-cooked cornmeal, which is chilled until firm, sliced into thick ribbons, and then fried to a shatteringly crisp exterior. Inside, the polenta remains remarkably creamy and soft, offering a delightful textural contrast.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Coarse ground yellow cornmeal (polenta), vegetable broth, unsalted butter, freshly grated Parmigiano-Reggiano, fresh rosemary or thyme, and sea salt.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="antipasta">
+        <div class="dish-img-container">
+            <img src="italian/Caponata.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Caponata</h4>
+            <p class="description">This cooked vegetable salad is a vibrant explosion of textures and flavors. The star is tender, fried eggplant, which is simmered in a rich tomato base alongside briny capers, salty olives, and crunchy celery.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fried eggplant (aubergine), celery, sweetened tomato sauce, onions, capers, green olives, wine vinegar, sugar, and toasted pine nuts or raisins for added texture and sweetness.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$12.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="italian/Espresso.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Espresso</h4>
+            <p class="description">The heartbeat of Italian coffee culture, an Espresso is a concentrated, 1-ounce shot of pure coffee excellence. Defined by its intense aroma and a thick, hazelnut-colored crema on top, it is brewed by forcing pressurized hot water through finely-ground, dark-roast coffee beans.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Highly concentrated coffee extracted from premium 100% Arabica or an Arabica-Robusta blend, and filtered water.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="italian/Cappuccino.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Cappuccino</h4>
+            <p class="description">This classic beverage is built upon a foundation of a rich double shot of espresso, topped with equal parts steamed milk and a thick, velvety layer of frothed milk foam. A true Italian cappuccino is defined by its "micro-foam"—bubbles so small they create a silky, marshmallow-like consistency that naturally sweetens the coffee's bold profile.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Concentrated espresso (100% Arabica or premium blend), fresh whole milk (steamed and frothed), and an optional dusting of cocoa powder or cinnamon on top.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$5.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+     <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="italian/Chinotto.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Chinotto</h4>
+            <p class="description">Produced from the juice of the small, bitter Citrus myrtifolia (Chinotto orange) grown on the sun-drenched slopes of Liguria or Sicily, this beverage is a cult favorite. It features a complex, bittersweet flavor profile reminiscent of an herbal amaro, with deep notes of caramel, cinnamon, and balsamic herbs.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Carbonated water, sugar, natural Chinotto extract, caramel color, and a proprietary blend of citrus and herbal aromas.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$2.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dish-card" data-category="drinks">
+        <div class="dish-img-container">
+            <img src="italian/Limonata.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Limonata</h4>
+            <p class="description">This sparkling lemonade is the gold standard of Italian refreshments, made using the juice of premium, sun-ripened Femminello Siracusano or Amalfi lemons.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Carbonated water, high-quality Italian lemon juice (often 12–16%), sugar, and natural lemon oils from the zest. Served over ice, frequently garnished with a sprig of fresh mint or a lemon slice.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$3.99</span>
+                <span class="serves">Serves 2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="italian/Panna Cotta.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Panna Cotta</h4>
+            <p class="description">This delicate treat is made by simmering high-quality cream, sugar, and vanilla, then setting it with a touch of gelatin to achieve its famous "wobble." It is light, subtly sweet, and serves as a cool, creamy canvas for various toppings.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh heavy cream, whole milk, sugar, premium vanilla bean or extract, and gelatin. Typically topped with a raspberry, strawberry, or wild berry reduction.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$9.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="italian/Tiramisu.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Tiramisu</h4>
+            <p class="description">This no-bake masterpiece features layers of delicate savoiardi (ladyfinger) biscuits that have been briefly soaked in strong espresso. These are topped with a luscious, velvety cream made from mascarpone cheese, fresh eggs, and sugar.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Savoiardi biscuits, high-quality espresso, mascarpone cheese, fresh eggs (pastured), sugar, and unsweetened cocoa powder. (Optional: A splash of Marsala wine or coffee liqueur in the soak).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$10.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="italian/Gelato.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Gelato</h4>
+            <p class="description">Italy’s iconic gift to the world of frozen treats, Gelato is much more than just "ice cream." It is crafted with a higher proportion of milk to cream and churned at a much slower speed, resulting in a denser, silkier texture with significantly less air.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Fresh whole milk, cream, sugar, and natural flavorings (such as slow-roasted nuts, fresh fruit purees, or premium cocoa).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$4.99</span>
+                <span class="serves">Serves 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="italian/Cannoli Siciliani.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Cannoli Siciliani</h4>
+            <p class="description">This iconic dessert consists of a tube-shaped shell of fried pastry dough, flavored with a hint of cinnamon and cocoa, which is fried until golden and "blistered" for a characteristic crunch. The shell is filled to order with a sweet, creamy sheep’s milk ricotta filling.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Flour, lard or butter, wine (Marsala), sugar, cinnamon, sheep’s milk ricotta, powdered sugar, and toppings (pistachios, chocolate, or candied fruit).</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$7.99</span>
+                <span class="serves">Serves 2-3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="dish-card" data-category="dessert">
+        <div class="dish-img-container">
+            <img src="italian/Semifreddo.jpg" alt="soup" class="dish-img">
+        </div>
+        <div class="dish-content">
+            <h4>Semifreddo</h4>
+            <p class="description">Unlike gelato, Semifreddo is not churned; instead, it is made by folding together a rich custard or zabaglione with whipped cream. This process traps air, creating a frozen treat that is light, airy, and velvety.</p>
+            <details class="ingredients-dropdown">
+                <summary>View Ingredients</summary>
+                <div class="ingredients-content">Whipped heavy cream, eggs (sugar-whipped yolks or meringue), and flavorings such as honey, toasted hazelnuts, dark chocolate, or seasonal fruit purees.</div>
+            </details>
+            <div class="price-row">
+                <span class="price">$11.99</span>
+                <span class="serves">Serves 1-2</span>
+            </div>
+        </div>
+    </div></div>
+
+
+
+
+    <footer class="contact-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p> 123 Silk Road, Food District</p>
+            <p> +1 234 567 890</p>
+            <p> info@italiancuisine.com</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 11:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 10:00 AM - 11:00 PM</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Italian Cuisine | All Rights Reserved</p>
+    </div>
+</footer>
+
+
+
+<script src="m3.js"></script>
+</body>
+
+

@@ -1,0 +1,264 @@
+ .hero-italian {
+            height: 100vh;
+            /* take up exactly 100% of the screen height  */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('italian/pasta.jpg');
+            /* it puts a dark tint on the page  */
+            background-size: cover;     
+            /* it tells the image to cover the screen  */
+            background-position: center; 
+            background-repeat: no-repeat;
+
+            display: flex;
+            /* To start using Flexbox, you must define a container: display: flex;
+
+Once you do this, you have access to these main properties:
+
+flex-direction: Defines the direction items are placed (Row or Column).
+
+flex-wrap: Decides if items should stay on one line or "wrap" to the next line if they run out of space.
+
+justify-content: Aligns items along the Main Axis (usually left-to-right).
+
+align-items: Aligns items along the Cross Axis (usually top-to-bottom). */
+            justify-content: center;
+            /* Moves your content to the middle vertically */
+            align-items: center;
+            /* Moves your content to the middle horizontally */
+            color: white;
+            text-align: center;
+            /* Ensures the actual letters inside the paragraphs are centered. */
+            flex-direction: column;
+           font-size: 35px;
+           font-family: 'Cinzel', serif;
+        }
+        #home-btn{
+            margin-top: 5%;  
+            margin-left: 1%; 
+            /* This creates "breathing room" outside the button so it’s not squished against the edges.            */
+            border: solid rgb(241, 107, 95);
+            border-radius: 10px;
+            /* This rounds the corners */
+            height: 58px;
+            width: 217px;
+            font-size: 20px; color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+        #home-btn:hover  {
+            /* This is a Pseudo-class. It only activates when the user's mouse is physically touching the button. */
+            transform: scale(1.1); 
+            /* The Value (1.1): This represents a multiplier.
+1.0 is the original size (100%).
+1.1 means the element becomes 1.1 times its original size (a 10% increase).
+0.5 would make the element half its original size. */
+            /* This makes the button grow to 10% of its original size. */
+            transition: transform 0.3s ease; /* Makes the growth smooth instead of jumpy */
+        }
+        #itabdy {
+            background-color: black;
+        }
+        
+        .navbar li {
+            list-style:none;
+            display: inline-block;
+           margin-left: 33px;
+           margin-right: 43px;
+
+        }
+         .navbar ul{
+            display: flex;
+    justify-content: flex-end; /* Keeps your links on the right */
+    /* justify-content	Aligns items along the Main Axis (e.g., center, space-between).
+align-items	Aligns items along the Cross Axis (e.g., center, stretch).
+flex-direction	Decides if items sit in a row (default) or a column.
+flex-wrap	Decides if items should jump to a new line (wrap) or stay on one line.
+gap	Sets a specific distance (e.g., 20px) between items. */
+    padding-right: 5%;
+    
+         }
+         .navbar li a:hover {
+           transform: scale(1.1); 
+    color: rgb(241, 107, 95);
+    transition: all 0.3s ease;
+     cursor: pointer;
+         }
+         .navbar li a{
+       display: inline-block; 
+    text-decoration: none;
+    color: white;
+         } 
+         
+.navbar {
+    color: white;
+            float:right;
+            font-size: 29px;
+    position: sticky; 
+    top: 0; 
+    width: 100%;
+    /*  Ensures it spans the full width of its container */
+    background-color: #000; 
+    z-index: 1000;
+     /* By giving it a high number like 1000, you ensure the menu always stays on top of the food images and never gets covered up. */
+    padding: 15px 0;
+    border-bottom: 2px solid rgb(241, 107, 95);
+   
+}
+            .dishes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 120px 5% 50px 5%; 
+    
+    background-color: black;
+    justify-content: start;
+        }
+        
+.dish-img {
+    width: 100%;
+    /* Made image slightly taller to match the broader card */
+    height: 250px; 
+    object-fit: cover;
+    /* This ensures the image isn't "squashed" or "stretched." It crops the edges to fill the 250px area. */
+    
+}
+        .dish-card{
+           background-color: #000; 
+    border: 2px solid rgb(241, 107, 95); 
+    border-radius: 8px;
+    overflow: hidden;
+    /* Ensures the image corners don't poke out past the card's border-radius. */
+    transition: transform 0.4s ease; 
+        }
+        .dish-card:hover {
+    transform: translateY(-5px);
+    /* On hover, the card moves 5 pixels upward, creating a "lift" effect. */
+        }
+        .dish-content {
+    padding: 25px; 
+        }
+        .dish-content h4 {
+    color: white; 
+    font-size: 1.5rem;
+    
+        }
+        .dish-content .description {
+    color: white;
+    font-size: 0.85rem; 
+    line-height: 1.6;
+    
+        }
+        .ingredients-dropdown {
+    margin: 15px 0;
+    border: 1px solid rgba(241, 107, 95, 0.5); 
+    border-radius: 4px;
+    background-color: #111;
+        }
+        .ingredients-dropdown summary {
+    color: rgb(241, 107, 95); 
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    
+    font-size: 0.85rem;
+        }
+        .ingredients-content {
+    color: white; 
+    padding: 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(241, 107, 95, 0.2);
+        }
+        .price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(241, 107, 95, 0.2);
+}
+        
+        .price {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+        }
+        .serves {
+    color: rgb(241, 107, 95); 
+    font-size: 0.9rem;
+        }
+
+
+
+       
+
+        .contact-footer {
+    background-color: #000; 
+    color: white; 
+    padding: 60px 5% 20px 5%;
+    border-top: 2px solid rgb(241, 107, 95); 
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    color: rgb(241, 107, 95);
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #ccc; 
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: rgb(241, 107, 95);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        /* This is the magic fix */
+        position: relative; /* It will now stay at the top and NOT follow you */
+        float: none;
+        height: auto;
+    }
+    .navbar ul {
+        flex-direction: column; /* Stacks links vertically on phones */
+        align-items: center;
+        padding-right:20px 0;
+    }
+    .navbar li {
+        margin: 15px 0; /* Adds space between stacked links */
+    }
+    .hero-italian h1 {
+        font-size: 2rem; /* Shrinks the big title so it doesn't break lines */
+    }
+}
+
+
+
+
