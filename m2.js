@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             dishes.forEach(dish => {
                 if (filter === "all" || dish.dataset.category === filter) {
                     dish.style.display = "block";
-                    dish.style.opacity = "1";
+                   
                 } else {
                     dish.style.display = "none";
                 }
