@@ -1,75 +1,253 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pakistani Cuisine</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistani Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body id="chibdy">
+<header>
+    <section class="hero-pakistan"> 
+        <div class="hero-content">
+            <h1>Pakistani Cuisine</h1>
+            <p class="p1">Experience the vibrant soul of the Indus Valley, where ancient spice routes <br> meet modern hospitality. From the aromatic heights of Basmati rice to <br> the slow-simmered perfection of traditional handis.</p>
+        </div>
+    </section>
+</header>
 
-<section class="hero-chinese">
-<h1>Pakistani Cuisine</h1>
-<p>Traditional desi flavors</p>
-</section>
+<input type="button" value="Go to Home page" id="home-btn" onclick="location.href='hello.html'"><br>
 
 <nav class="navbar">
 <ul>
-<li><a href="#" data-filter="all">All</a></li>
-<li><a href="#" data-filter="main">Main</a></li>
-<li><a href="#" data-filter="rice">Rice</a></li>
+    <li><a href="#" data-filter="all">All Dishes</a></li>
+    <li><a href="#" data-filter="main">Main Curries</a></li>
+    <li><a href="#" data-filter="rice">Rice</a></li>
+    <li><a href="#" data-filter="bbq">BBQ</a></li>
+    <li><a href="#" data-filter="drinks">Drinks</a></li>
+    <li><a href="#" data-filter="dessert">Desserts</a></li>
 </ul>
 </nav>
 
 <div class="dishes-container">
+    <div class="dish-card" data-category="main">
+        <img src="nihari.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Beef Nihari</h4>
+            <p class="description">Slow-cooked beef shank in a rich, spicy marrow gravy.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Beef shank, wheat flour, ginger, fennel, star anise.</div></details>
+            <div class="price-row"><span class="price">$14.99</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="rice">
+        <img src="biryani.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Chicken Biryani</h4>
+            <p class="description">Fragrant Basmati rice layered with spicy chicken and saffron.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Rice, chicken, yogurt, mint, saffron, plums.</div></details>
+            <div class="price-row"><span class="price">$12.50</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="karahi.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Mutton Karahi</h4>
+            <p class="description">Succulent mutton cooked in a wok with tomatoes and ginger.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Mutton, tomatoes, green chilies, ginger, black pepper.</div></details>
+            <div class="price-row"><span class="price">$18.99</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="haleem.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Shahi Haleem</h4>
+            <p class="description">A slow-simmered stew of seven grains and shredded beef.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Wheat, barley, lentils, beef, fried onions, lemon.</div></details>
+            <div class="price-row"><span class="price">$10.99</span><span class="serves">Serves 1-2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="bbq">
+        <img src="chapli.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Chapli Kebab</h4>
+            <p class="description">Flat, spicy minced beef patties with pomegranate seeds.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Minced beef, tomatoes, cornmeal, pomegranate seeds.</div></details>
+            <div class="price-row"><span class="price">$9.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="bbq">
+        <img src="seekh.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Beef Seekh Kebab</h4>
+            <p class="description">Char-grilled skewers of spiced minced meat.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Beef, coriander, green chili, papaya paste.</div></details>
+            <div class="price-row"><span class="price">$11.00</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="rice">
+        <img src="pulao.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Yakhni Pulao</h4>
+            <p class="description">Rice cooked in a flavorful mutton bone broth.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Basmati rice, mutton broth, cloves, cardamom.</div></details>
+            <div class="price-row"><span class="price">$13.50</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="saag.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Sarson ka Saag</h4>
+            <p class="description">Traditional mustard greens cooked with butter.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Mustard leaves, spinach, butter, cornflour.</div></details>
+            <div class="price-row"><span class="price">$8.99</span><span class="serves">Serves 1-2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="bbq">
+        <img src="tikka.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Chicken Tikka</h4>
+            <p class="description">Spicy grilled chicken quarter marinated in yogurt.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Chicken, red chili, yogurt, lemon juice.</div></details>
+            <div class="price-row"><span class="price">$7.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="daal.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Fry Daal Mash</h4>
+            <p class="description">Lentils sautéed with ginger and garlic butter.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">White lentils, ghee, ginger, cumin.</div></details>
+            <div class="price-row"><span class="price">$6.99</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="bbq">
+        <img src="sajji.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Balochi Sajji</h4>
+            <p class="description">Whole roasted chicken stuffed with rice.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Whole chicken, salt, lemon, special sajji masala.</div></details>
+            <div class="price-row"><span class="price">$19.99</span><span class="serves">Serves 3-4</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="kofta.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Nargisi Kofta</h4>
+            <p class="description">Meatballs stuffed with boiled eggs in a thick curry.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Minced meat, eggs, yogurt, coriander.</div></details>
+            <div class="price-row"><span class="price">$12.00</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="lassi.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Mango Lassi</h4>
+            <p class="description">Thick yogurt drink blended with fresh mangoes.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Yogurt, milk, fresh mango pulp, sugar.</div></details>
+            <div class="price-row"><span class="price">$4.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="pakola.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Pakola Cream Soda</h4>
+            <p class="description">Pakistan's iconic green vanilla-flavored soda.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Carbonated water, sugar, vanilla flavor.</div></details>
+            <div class="price-row"><span class="price">$2.99</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="pinktea.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Pink Tea (Gulabi Chai)</h4>
+            <p class="description">Salty and sweet tea topped with pistachios.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Green tea leaves, baking soda, milk, nuts.</div></details>
+            <div class="price-row"><span class="price">$3.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="dessert">
+        <img src="gulab.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Gulab Jamun</h4>
+            <p class="description">Sweet milk-solid dumplings in rose syrup.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Milk solids (khoya), flour, sugar syrup.</div></details>
+            <div class="price-row"><span class="price">$5.00</span><span class="serves">Serves 1-2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="dessert">
+        <img src="kheer.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Rice Kheer</h4>
+            <p class="description">Traditional rice pudding with saffron and nuts.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Milk, rice, cardamom, almonds.</div></details>
+            <div class="price-row"><span class="price">$6.00</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="dessert">
+        <img src="halwa.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Gajar ka Halwa</h4>
+            <p class="description">Carrot pudding slow-cooked with milk and ghee.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Carrots, khoya, sugar, ghee, nuts.</div></details>
+            <div class="price-row"><span class="price">$7.50</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="chai.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Doodh Patti</h4>
+            <p class="description">Strong milk tea boiled for a rich flavor.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Tapal tea leaves, whole milk, cardamom.</div></details>
+            <div class="price-row"><span class="price">$2.00</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="bbq">
+        <img src="malai.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Malai Boti</h4>
+            <p class="description">Creamy, melt-in-the-mouth grilled chicken bites.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Chicken, cream, white pepper, yogurt.</div></details>
+            <div class="price-row"><span class="price">$12.99</span><span class="serves">Serves 1-2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="rooh.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Rooh Afza</h4>
+            <p class="description">Summer cooler made of rose and herb syrup.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Rooh Afza syrup, water/milk, basil seeds.</div></details>
+            <div class="price-row"><span class="price">$3.00</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+</div>
 
-<div class="dish-card" data-category="main">
-<img src="nihari.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Nihari</h4>
-<p class="description">Slow-cooked beef curry.</p>
-<div class="price-row"><span class="price">PKR 1960</span></div>
-</div>
-</div>
-
-<div class="dish-card" data-category="rice">
-<img src="biryani.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Chicken Biryani</h4>
-<p class="description">Spicy rice with chicken.</p>
-<div class="price-row"><span class="price">PKR 1680</span></div>
-</div>
-</div>
-
-<div class="dish-card" data-category="main">
-<img src="karahi.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Chicken Karahi</h4>
-<p class="description">Tomato-based curry.</p>
-<div class="price-row"><span class="price">PKR 2240</span></div>
-</div>
-</div>
-
-<div class="dish-card" data-category="main">
-<img src="haleem.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Haleem</h4>
-<p class="description">Lentil & meat stew.</p>
-<div class="price-row"><span class="price">PKR 1400</span></div>
-</div>
-</div>
-
-<div class="dish-card" data-category="main">
-<img src="chapli.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Chapli Kebab</h4>
-<p class="description">Flat spicy minced beef kebab.</p>
-<div class="price-row"><span class="price">PKR 1120</span></div>
-</div>
-</div>
-
-</div>
+<footer class="contact-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p> 123 Silk Road, Food District</p>
+            <p> +1 234 567 890</p>
+            <p> info@pakistanicuisine.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 11:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 10:00 AM - 11:00 PM</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Pakistani Cuisine | All Rights Reserved</p>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>

@@ -1,36 +1,130 @@
- .hero-chinese {
-            height: 100vh;
-            /* take up exactly 100% of the screen height  */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('dim-sum.JPG.jpg');
-            /* it puts a dark tint on the page  */
-            background-size: cover;     
-            /* it tells the image to cover the screen  */
-            background-position: center; 
-            background-repeat: no-repeat;
+/* Background Logo Watermark */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Replace 'logo.png' with your actual image file name */
+    background-image: url('logo.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 600px; /* Adjust size as needed */
+    height: 600px;
+    opacity: 0.1; /* This makes it a subtle watermark */
+    z-index: -1; /* Places it behind all food cards */
+    pointer-events: none; /* Allows you to still click buttons/cards */
+}
+/* Pakistani Hero Background */
+.hero-pakistan {
+    height: 100vh;
+    /* Dark tint overlay with your 4k background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pakistani-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Cinzel', serif;
+}
 
-            display: flex;
-            /* To start using Flexbox, you must define a container: display: flex;
+/* Background Watermark Logo for both pages */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('logo.png'); /* Place your logo file name here */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    opacity: 0.05; /* Keeps it subtle as a watermark */
+    z-index: -1;
+    pointer-events: none;
+}/* Pakistani Hero Background */
+.hero-pakistan {
+    height: 100vh;
+    /* Dark tint overlay with your 4k background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pakistani-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Cinzel', serif;
+}
 
-Once you do this, you have access to these main properties:
+/* Background Watermark Logo for both pages */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('logo.png'); /* Place your logo file name here */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    opacity: 0.05; /* Keeps it subtle as a watermark */
+    z-index: -1;
+    pointer-events: none;
+}
+/* Specific Hero sections for background images */
+.hero-pakistan {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('pakistan-hero.jpg');
+}
 
-flex-direction: Defines the direction items are placed (Row or Column).
+.hero-turkish {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('turkish-hero.jpg');
+}
+/* Hero section for Pakistani Cuisine */
+.hero-pakistan {
+    height: 100vh;
+    /* This adds the image with a dark tint so text remains readable */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('https://images.unsplash.com/photo-1567121938596-9d04068832a8?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Cinzel', serif;
+}
 
-flex-wrap: Decides if items should stay on one line or "wrap" to the next line if they run out of space.
-
-justify-content: Aligns items along the Main Axis (usually left-to-right).
-
-align-items: Aligns items along the Cross Axis (usually top-to-bottom). */
-            justify-content: center;
-            /* Moves your content to the middle vertically */
-            align-items: center;
-            /* Moves your content to the middle horizontally */
-            color: white;
-            text-align: center;
-            /* Ensures the actual letters inside the paragraphs are centered. */
-            flex-direction: column;
-           font-size: 35px;
-           font-family: 'Cinzel', serif;
-        }
+/* Hero section for Turkish Cuisine */
+.hero-turkish {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Cinzel', serif;
+}
         #home-btn{
             margin-top: 5%;  
             margin-left: 1%; 

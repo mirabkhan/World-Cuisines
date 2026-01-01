@@ -1,75 +1,258 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Turkish Cuisine</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body id="chibdy">
-
-<section class="hero-chinese">
-<h1>Turkish Cuisine</h1>
-<p>Authentic flavors of Turkey</p>
-</section>
+<header>
+    <section class="hero-chinese" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('turkish-hero.jpg');">
+        <div class="hero-content">
+            <h1>Turkish Cuisine</h1>
+            <p class="p1">From the bustling Grand Bazaar to the Mediterranean coast,<br> savor the legacy of the Ottoman Empire through perfectly charred meats <br> and honey-soaked pastries.</p>
+        </div>
+    </section>
+</header>
+<header>
+    <section class="hero-turkish"> <div class="hero-content">
+            <h1>Turkish Cuisine</h1>
+            <p class="p1">From the bustling Grand Bazaar to the Mediterranean coast...</p>
+        </div>
+    </section>
+</header>
+<input type="button" value="Go to Home page" id="home-btn" onclick="location.href='index.html'"><br>
 
 <nav class="navbar">
 <ul>
-<li><a href="#" data-filter="all">All</a></li>
-<li><a href="#" data-filter="main">Main</a></li>
-<li><a href="#" data-filter="dessert">Desserts</a></li>
+    <li><a href="#" data-filter="all">All Dishes</a></li>
+    <li><a href="#" data-filter="main">Kebabs & Mains</a></li>
+    <li><a href="#" data-filter="pide">Pide & Dough</a></li>
+    <li><a href="#" data-filter="drinks">Drinks</a></li>
+    <li><a href="#" data-filter="dessert">Desserts</a></li>
 </ul>
 </nav>
 
 <div class="dishes-container">
+    <div class="dish-card" data-category="main">
+        <img src="adana.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Adana Kebab</h4>
+            <p class="description">Hand-minced lamb grilled on wide iron skewers.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Lamb, tail fat, red peppers, salt, pul biber.</div></details>
+            <div class="price-row"><span class="price">$18.99</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="doner.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Beef Doner</h4>
+            <p class="description">Classic vertical rotisserie beef served in pita.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Marinated beef, garlic, thyme, sumac onions.</div></details>
+            <div class="price-row"><span class="price">$14.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="dessert">
+        <img src="baklava.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Pistachio Baklava</h4>
+            <p class="description">Layers of phyllo pastry with Antep pistachios and syrup.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Phyllo dough, butter, pistachio, sugar syrup.</div></details>
+            <div class="price-row"><span class="price">$9.99</span><span class="serves">Serves 2-3</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="pide">
+        <img src="pide.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Kiymali Pide</h4>
+            <p class="description">Boat-shaped Turkish flatbread with minced meat.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Dough, minced beef, onions, tomatoes.</div></details>
+            <div class="price-row"><span class="price">$13.00</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="iskender.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Iskender Kebab</h4>
+            <p class="description">Doner meat topped with hot tomato sauce and butter.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Beef, pide bread, yogurt, tomato sauce, butter.</div></details>
+            <div class="price-row"><span class="price">$20.00</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="pide">
+        <img src="lahmacun.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Lahmacun</h4>
+            <p class="description">Thin, crispy dough topped with spicy minced meat.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Thin dough, minced lamb, parsley, spices.</div></details>
+            <div class="price-row"><span class="price">$8.00</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="dessert">
+        <img src="kunefe.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Kunefe</h4>
+            <p class="description">Cheese-filled pastry soaked in sweet syrup.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Kadayif dough, Hatay cheese, syrup, pistachios.</div></details>
+            <div class="price-row"><span class="price">$11.50</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="ayran.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Fresh Ayran</h4>
+            <p class="description">Frothy, cold yogurt drink with a hint of salt.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Yogurt, water, sea salt.</div></details>
+            <div class="price-row"><span class="price">$3.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="coffee.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Turkish Coffee</h4>
+            <p class="description">Extra fine ground coffee boiled in a cezve.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Ground coffee, water, optional sugar.</div></details>
+            <div class="price-row"><span class="price">$4.99</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="shish.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Lamb Shish</h4>
+            <p class="description">Marinated cubes of lamb grilled on skewers.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Lamb cubes, olive oil, garlic, rosemary.</div></details>
+            <div class="price-row"><span class="price">$17.00</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="manti.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Turkish Manti</h4>
+            <p class="description">Mini dumplings topped with garlic yogurt and oil.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Dough, minced meat, yogurt, chili butter.</div></details>
+            <div class="price-row"><span class="price">$16.50</span><span class="serves">Serves 1-2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="soup.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Lentil Soup</h4>
+            <p class="description">Creamy yellow lentil soup served with lemon.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Red lentils, onions, carrots, cumin.</div></details>
+            <div class="price-row"><span class="price">$6.99</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="pide">
+        <img src="borek.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Sigara Boregi</h4>
+            <p class="description">Cigar-shaped crispy pastries filled with cheese.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Yufka dough, feta cheese, parsley.</div></details>
+            <div class="price-row"><span class="price">$7.50</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="meze.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Mixed Meze</h4>
+            <p class="description">Selection of hummus, baba ganoush, and sarma.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Chickpeas, eggplant, grape leaves, tahini.</div></details>
+            <div class="price-row"><span class="price">$15.00</span><span class="serves">Serves 2-3</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="tea.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Rize Black Tea</h4>
+            <p class="description">Strong black tea served in tulip glasses.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Rize tea leaves, filtered water.</div></details>
+            <div class="price-row"><span class="price">$2.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="dessert">
+        <img src="sutlac.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Oven Baked Sutlac</h4>
+            <p class="description">Creamy rice pudding with a caramelized top.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Milk, rice, sugar, vanilla.</div></details>
+            <div class="price-row"><span class="price">$6.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="salep.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Salep</h4>
+            <p class="description">Warm milk drink made from wild orchid tubers.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Salep flour, milk, cinnamon.</div></details>
+            <div class="price-row"><span class="price">$5.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="dessert">
+        <img src="lokum.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Turkish Delight</h4>
+            <p class="description">Assorted cubes of chewy rose and nut candies.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Starch, sugar, rosewater, pistachios.</div></details>
+            <div class="price-row"><span class="price">$8.00</span><span class="serves">Serves 2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="main">
+        <img src="imam.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Imam Bayildi</h4>
+            <p class="description">Stuffed eggplant slow-cooked in olive oil.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Eggplant, tomatoes, onions, olive oil.</div></details>
+            <div class="price-row"><span class="price">$12.50</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="dessert">
+        <img src="helva.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Cheese Helva</h4>
+            <p class="description">Sweet semolina dessert made with local cheese.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Semolina, cheese, sugar, pine nuts.</div></details>
+            <div class="price-row"><span class="price">$9.00</span><span class="serves">Serves 1-2</span></div>
+        </div>
+    </div>
+    <div class="dish-card" data-category="drinks">
+        <img src="sherbet.jpg" class="dish-img">
+        <div class="dish-content">
+            <h4>Ottoman Sherbet</h4>
+            <p class="description">Traditional drink made from fruit and flower petals.</p>
+            <details class="ingredients-dropdown"><summary>View Ingredients</summary><div class="ingredients-content">Pomegranate, rose, hibiscus, cloves.</div></details>
+            <div class="price-row"><span class="price">$4.00</span><span class="serves">Serves 1</span></div>
+        </div>
+    </div>
+</div>
 
-<div class="dish-card" data-category="main">
-<img src="doner.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Doner Kebab</h4>
-<p class="description">Slow-roasted beef or chicken.</p>
-<div class="price-row"><span class="price">PKR 2520</span></div>
-</div>
-</div>
-
-<div class="dish-card" data-category="main">
-<img src="adana.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Adana Kebab</h4>
-<p class="description">Spicy minced meat kebab.</p>
-<div class="price-row"><span class="price">PKR 2800</span></div>
-</div>
-</div>
-
-<div class="dish-card" data-category="main">
-<img src="pide.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Turkish Pide</h4>
-<p class="description">Boat-shaped Turkish pizza.</p>
-<div class="price-row"><span class="price">PKR 2240</span></div>
-</div>
-</div>
-
-<div class="dish-card" data-category="dessert">
-<img src="baklava.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Baklava</h4>
-<p class="description">Layered pastry with nuts.</p>
-<div class="price-row"><span class="price">PKR 1400</span></div>
-</div>
-</div>
-
-<div class="dish-card" data-category="dessert">
-<img src="kunefe.jpg" class="dish-img">
-<div class="dish-content">
-<h4>Kunefe</h4>
-<p class="description">Cheese dessert soaked in syrup.</p>
-<div class="price-row"><span class="price">PKR 1680</span></div>
-</div>
-</div>
-
-</div>
+<footer class="contact-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p> 123 Silk Road, Food District</p>
+            <p> +1 234 567 890</p>
+            <p> info@turkishcuisine.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 11:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 10:00 AM - 11:00 PM</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Turkish Cuisine | All Rights Reserved</p>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>

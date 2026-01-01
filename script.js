@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             dishes.forEach(dish => {
                 if (filter === "all" || dish.dataset.category === filter) {
                     dish.style.display = "block";
-                    
+                    dish.style.opacity = "1";
                 } else {
                     dish.style.display = "none";
                 }
@@ -51,3 +51,16 @@ document.addEventListener("DOMContentLoaded", function () {
 // If YES: It sets the CSS to display: block (makes it visible).
 
 // If NO: It sets the CSS to display: none (removes it from the page layout).
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the home button
+    const homeBtn = document.getElementById("home-btn");
+
+    // If the button exists on this page, add the click instruction
+    if (homeBtn) {
+        homeBtn.addEventListener("click", function () {
+            window.location.href = "hello.html"; 
+        });
+    }
+});
