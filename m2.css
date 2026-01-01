@@ -241,7 +241,6 @@ gap	Sets a specific distance (e.g., 20px) between items. */
 
 @media (max-width: 768px) {
     .navbar {
-        /* This is the magic fix */
         position: relative; /* It will now stay at the top and NOT follow you */
         float: none;
         height: auto;

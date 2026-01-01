@@ -52,14 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // If NO: It sets the CSS to display: none (removes it from the page layout).
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Select the home button
-    const homeBtn = document.getElementById("home-btn");
 
-    // If the button exists on this page, add the click instruction
+    const homeBtn = document.getElementById("home-btn");
     if (homeBtn) {
         homeBtn.addEventListener("click", function () {
             window.location.href = "hello.html"; 
         });
     }
-});
