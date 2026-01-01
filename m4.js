@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Why? If the script runs before the HTML exists, it won't find your buttons or cards.
 
-// const: This creates a "variable"—a named container to store information.
+// const: This creates a "variable"—a named container to store information.it does not change
 
 // querySelectorAll: This is like a search tool. It goes into the HTML and finds all elements that match the CSS name.
 
